@@ -1,5 +1,7 @@
 import org.junit.jupiter.api.*;
 import java.time.LocalTime;
+import java.util.Objects;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class RestaurantServiceTest
@@ -23,7 +25,7 @@ class RestaurantServiceTest
     {
         addRestaurantDetails();
         String restaurantName = "Amelie's cafe";
-        assertTrue(service.findRestaurantByName(restaurantName).getName() == restaurantName);
+        assertTrue(Objects.equals(service.findRestaurantByName(restaurantName).getName(), restaurantName));
     }
 
     //You may watch the video by Muthukumaran on how to write exceptions in Course 3: Testing and Version control: Optional content
