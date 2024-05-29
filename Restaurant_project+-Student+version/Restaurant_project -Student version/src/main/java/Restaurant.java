@@ -59,16 +59,6 @@ public class Restaurant
         menu.remove(itemToBeRemoved);
     }
 
-    // public int TotalOrderValue(List<String> items)
-    // {
-    //    int totalAmount = 0;
-    //    for (String item : items)
-    //    {
-    //    totalAmount = totalAmount+findItemByName(item).getPrice();
-    //    }
-    //    return totalAmount;
-    // }
-
     public int getOrderValue(String[] itemNames) {
         Item item;
         int totalAmount = 0;
